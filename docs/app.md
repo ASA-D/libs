@@ -7,7 +7,7 @@ app.h
 サンプルプログラム
 =======
 
-Here's a basic sample program which starts a windowed app and plots random pixels.
+GUIアプリケーションを起動し、ランダムなピクセルを描画するサンプルプログラムです。
 
 ```cpp
 #define  APP_IMPLEMENTATION
@@ -49,12 +49,11 @@ extern "C" int __stdcall WinMain( struct HINSTANCE__*, struct HINSTANCE__*, char
 ```
 
 
-API Documentation
+API ドキュメント
 =================
 
-app.h is a single-header library, and does not need any .lib files or other binaries, or any build scripts. To use it,
-you just include app.h to get the API declarations. To get the definitions, you must include app.h from *one* single
-C or C++ file, and #define the symbol `APP_IMPLEMENTATION` before you do. 
+app.hはシングルファイルライブラリであり、.libファイルや他のバイナリ、ビルドスクリプトは必要ありません。 使用するには、app.hをインクルードしてAPI宣言を取得するだけです。この定義を得るには、CまたはC++のファイルからapp.hをインクルードしなければなりません。
+C または C++ ファイルから app.h をインクルードし、シンボル `APP_IMPLEMENTATION` を #define してから、その定義を取得します。
 
 As app.h is meant to be a cross platform library (even though only windows is supported right now), you must also 
 define which platform you are running on, like this:
