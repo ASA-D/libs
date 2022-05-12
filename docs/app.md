@@ -1,10 +1,10 @@
 app.h
 =====
 
-Library: [app.h](../app.h)
+ライブラリ: [app.h](../app.h)
 
 
-Example
+サンプルプログラム
 =======
 
 Here's a basic sample program which starts a windowed app and plots random pixels.
